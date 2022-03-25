@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+    <p>{{ blog.updated_at }}</p>
+    {{ blog.text }}<hr />
+    <br>
+    <a href="{% url 'blog:index' %}">トップページに戻る</a>
+
+{% endblock %}
